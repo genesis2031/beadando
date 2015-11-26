@@ -52,6 +52,20 @@
     - Állapotdiagram
     
         ![Állapotdiagram](workspace/pictures/3.png)
+        
+##Implementáció
+
+1. Fejlesztői környezet:
+    - Cloud9 webes IDE
+    
+2. Könyvtárstruktúra:
+    - config: a waterline konfigurációja
+    - controllers: vezérlők, folyamatok irányítása
+    - models: adatok, modell definiálása
+    - node_modules: node js-hez telepített modulok
+    - public
+    - viewmodels: nézetmodel 
+    - views: az egyes oldalak kinézetét adja meg
 ##Tesztelés
 
 	- Selenium IDE segítségével
