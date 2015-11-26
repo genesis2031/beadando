@@ -52,7 +52,6 @@
     - Állapotdiagram
     
         ![Állapotdiagram](workspace/pictures/3.png)
-
 ##Tesztelés
 
 	- Selenium IDE segítségével
