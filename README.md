@@ -64,7 +64,8 @@
     - models: adatok, modell definiálása
     - node_modules: node js-hez telepített modulok
     - public
-    - viewmodels: nézetmodel- views: az egyes oldalak kinézetét adja meg
+    - viewmodels: nézetmodel
+    - views: az egyes oldalak kinézetét adja meg
 ##Tesztelés
 
 	- Selenium IDE segítségével
