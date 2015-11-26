@@ -1,0 +1,202 @@
+{
+  "data": {
+    "error": [],
+    "todo": [
+      {
+        "status": "done",
+        "priority": "Alacsony",
+        "name": "asgasg",
+        "description": "afgdfg",
+        "date": "2015-11-25T04:19:23.761Z",
+        "createdAt": "2015-11-25T04:19:23.763Z",
+        "updatedAt": "2015-11-25T06:49:50.389Z",
+        "id": 10
+      },
+      {
+        "status": "done",
+        "priority": "Magas",
+        "name": "gggnfhnf",
+        "description": "nhntzhdz",
+        "date": "2015-11-25T06:49:57.135Z",
+        "createdAt": "2015-11-25T06:49:57.135Z",
+        "updatedAt": "2015-11-25T06:50:19.136Z",
+        "id": 11
+      }
+    ],
+    "user": [
+      {
+        "surname": "asd",
+        "forename": "asd",
+        "neptun": "asd",
+        "password": "$2a$10$gojx8.ihpyF3NEbIuZfiBut5PRulrA5LYXv9rjySZ.Y7t6mTkI.Iq",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-24T23:05:06.386Z",
+        "updatedAt": "2015-11-24T23:05:06.386Z",
+        "id": 1
+      },
+      {
+        "surname": "Dobrovits",
+        "forename": "Ferenc",
+        "neptun": "genesis",
+        "password": "$2a$10$4NCzYfsAO26PiMivN9bV6ujYvkpvzLBRFN34ejg/kzCvKmhtGpvHa",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-25T02:48:54.013Z",
+        "updatedAt": "2015-11-25T02:48:54.013Z",
+        "id": 2
+      },
+      {
+        "surname": "qwe",
+        "forename": "qwe",
+        "neptun": "qwe",
+        "password": "$2a$10$mUevmjYnmXiYjJDNQ.1iaupE.IJWCKLMJqIHkNGP1ffm2fSH5LKFe",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-26T01:44:36.814Z",
+        "updatedAt": "2015-11-26T01:44:36.814Z",
+        "id": 3
+      },
+      {
+        "surname": "asdf",
+        "forename": "asdf",
+        "neptun": "asdf",
+        "password": "$2a$10$Ro7T4DHyGXi2U6FBNvKEgemXtn4jQh772RBA6PqkwhIQkuXb7Mvsq",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-26T04:30:53.440Z",
+        "updatedAt": "2015-11-26T04:30:53.440Z",
+        "id": 4
+      }
+    ]
+  },
+  "schema": {
+    "error": {
+      "date": {
+        "type": "datetime"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "new",
+          "assigned",
+          "success",
+          "rejected",
+          "pending"
+        ]
+      },
+      "location": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "todo": {
+      "status": {
+        "type": "string",
+        "enum": [
+          "new",
+          "done",
+          "in_progress"
+        ]
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "priority": {
+        "type": "string",
+        "enum": [
+          "Magas",
+          "Alacsony"
+        ]
+      },
+      "date": {
+        "type": "datetime"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "neptun": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "surname": {
+        "type": "string"
+      },
+      "forename": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "riporter",
+          "operator"
+        ],
+        "defaultsTo": "riporter"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "error": {},
+    "user": {
+      "id": 4
+    },
+    "todo": {
+      "id": 11
+    }
+  }
+}
